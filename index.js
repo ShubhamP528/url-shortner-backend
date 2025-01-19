@@ -4,6 +4,7 @@ const cors = require("cors");
 const connectDB = require("./config/db");
 const errorMiddleware = require("./middleware/error");
 const logger = require("./utils/logger");
+const { connectRedis } = require("./config/redisClient.js");
 
 // Routes
 const authRoutes = require("./routes/auth.routes");
@@ -13,6 +14,9 @@ const app = express();
 
 // Connect to Database
 connectDB();
+
+// Connect to Redis on server start
+connectRedis();
 
 // Middleware
 app.use(cors());

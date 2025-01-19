@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  backend:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    depends_on:
+      - redis
+      - mongo
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    command:
+      ["redis-server", "--requirepass", "y0MIFGwtReQebiyq5T5vGodRW7q9YCsc"]
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"

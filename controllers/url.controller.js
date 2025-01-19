@@ -1,6 +1,7 @@
 const UrlService = require("../services/url.service");
 const AnalyticsService = require("../services/analytics.service");
 const logger = require("../utils/logger");
+const { redisClient } = require("../config/redisClient.js");
 
 class UrlController {
   static async createShortUrl(req, res, next) {
@@ -25,7 +26,21 @@ class UrlController {
   static async redirect(req, res, next) {
     try {
       const { alias } = req.params;
+
+      // Check if the alias exists in Redis cache
+      const cachedData = await redisClient.get(alias);
+
+      if (cachedData) {
+        console.log("Cache hit");
+        return res.redirect(JSON.parse(cachedData)); // Return cached data
+      }
+
       const url = await UrlService.getUrl(alias);
+
+      // Cache the response
+      await redisClient.set(alias, JSON.stringify(url.longUrl), {
+        EX: 3600, // Set expiration to 1 hour
+      });
 
       // Log analytics asynchronously
       AnalyticsService.logVisit(url._id, req).catch((err) =>
@@ -41,6 +56,7 @@ class UrlController {
   static async getUrlAnalytics(req, res, next) {
     try {
       const { alias } = req.params;
+
       const url = await UrlService.getUrl(alias);
 
       if (url.userId !== req.user.id) {
