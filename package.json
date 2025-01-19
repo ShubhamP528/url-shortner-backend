@@ -18,7 +18,7 @@
     "google-auth-library": "^9.15.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.5",
-    "nanoid": "^5.0.9",
+    "nanoid": "^3.3.8",
     "ua-parser-js": "^2.0.0",
     "winston": "^3.17.0"
   },
