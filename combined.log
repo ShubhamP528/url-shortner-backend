@@ -57,3 +57,5 @@
 {"level":"info","message":"Short URL created for https://www.bing.com/images/search?view=detailV2&ccid=7cRYFyLo&id=13AACF36666E0F1D8D747A027746ADC2EE6CB644&thid=OIP.7cRYFyLoDEDh4sRtM73vvwHaDg&mediaurl=https%3a%2f%2fimages.pexels.com%2fphotos%2f459225%2fpexels-photo-459225.jpeg%3fcs%3dsrgb%26dl%3ddaylight-environment-forest-459225.jpg%26fm%3djpg&exph=2848&expw=6000&q=images&simid=608009560102756461&FORM=IRPRST&ck=9957D1EF0EAC0E4636EA766DE8D29D4D&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0","timestamp":"2025-01-19T01:25:42.120Z"}
 {"level":"info","message":"Server running on port 8900","timestamp":"2025-01-19T01:28:15.207Z"}
 {"level":"info","message":"MongoDB Connected","timestamp":"2025-01-19T01:28:17.701Z"}
+{"level":"info","message":"Server running on port 8900","timestamp":"2025-01-19T03:31:08.566Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-01-19T03:31:25.648Z"}
