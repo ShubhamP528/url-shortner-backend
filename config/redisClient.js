@@ -3,10 +3,10 @@ import { createClient } from "redis";
 // Create and configure the Redis client
 const redisClient = createClient({
   username: "default",
-  password: "y0MIFGwtReQebiyq5T5vGodRW7q9YCsc",
+  password: process.env.REDIS_PASSWORD,
   socket: {
-    host: "redis-14192.c259.us-central1-2.gce.redns.redis-cloud.com",
-    port: 14192,
+    host: process.env.REDIS_HOST,
+    port: process.env.REDIS_PORT,
   },
 });
 

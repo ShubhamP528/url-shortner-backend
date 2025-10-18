@@ -105,3 +105,16 @@
 {"level":"error","message":"Error: URL not found\n    at UrlService.getUrl (C:\\Users\\HP\\OneDrive\\Desktop\\Assign1\\Backend\\services\\url.service.js:102:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async redirect (C:\\Users\\HP\\OneDrive\\Desktop\\Assign1\\Backend\\controllers\\url.controller.js:38:19)","timestamp":"2025-01-19T10:30:55.126Z"}
 {"level":"error","message":"Error: URL not found\n    at UrlService.getUrl (C:\\Users\\HP\\OneDrive\\Desktop\\Assign1\\Backend\\services\\url.service.js:102:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async redirect (C:\\Users\\HP\\OneDrive\\Desktop\\Assign1\\Backend\\controllers\\url.controller.js:38:19)","timestamp":"2025-01-19T10:31:00.848Z"}
 {"level":"error","message":"Error: URL not found\n    at UrlService.getUrl (C:\\Users\\HP\\OneDrive\\Desktop\\Assign1\\Backend\\services\\url.service.js:102:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async redirect (C:\\Users\\HP\\OneDrive\\Desktop\\Assign1\\Backend\\controllers\\url.controller.js:38:19)","timestamp":"2025-01-19T10:31:05.560Z"}
+{"level":"info","message":"Server running on port 8900","timestamp":"2025-10-18T01:45:19.434Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-10-18T01:45:20.294Z"}
+{"level":"info","message":"Server running on port 8900","timestamp":"2025-10-18T01:49:12.384Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-10-18T01:49:13.249Z"}
+{"level":"info","message":"Server running on port 8900","timestamp":"2025-10-18T02:01:37.625Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-10-18T02:01:38.482Z"}
+{"level":"error","message":"Error: Custom alias already exists\n    at UrlService.createShortUrl (D:\\Practice\\url-shortner-backend\\services\\url.service.js:77:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async createShortUrl (D:\\Practice\\url-shortner-backend\\controllers\\url.controller.js:12:22)","timestamp":"2025-10-18T02:02:38.150Z"}
+{"level":"error","message":"Error: Custom alias already exists\n    at UrlService.createShortUrl (D:\\Practice\\url-shortner-backend\\services\\url.service.js:77:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async createShortUrl (D:\\Practice\\url-shortner-backend\\controllers\\url.controller.js:12:22)","timestamp":"2025-10-18T02:03:01.146Z"}
+{"level":"info","message":"Short URL created for https://shubhamprajapati528.netlify.app/","timestamp":"2025-10-18T02:03:06.055Z"}
+{"level":"info","message":"Server running on port 8900","timestamp":"2025-10-18T02:05:32.267Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-10-18T02:05:33.105Z"}
+{"level":"info","message":"Server running on port 8900","timestamp":"2025-10-18T02:06:09.657Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-10-18T02:06:10.375Z"}
